@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function Navbar({ darkMode, toggleDarkMode }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <nav className="sticky top-0 bg-white dark:bg-gray-800 shadow-md z-30">
