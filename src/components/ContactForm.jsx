@@ -12,6 +12,7 @@ function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -21,18 +22,11 @@ function ContactForm() {
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitted(true);
-        setIsLoading(false);
+      setIsLoading(false);
       setIsError(false);
+      reset();
     }, 1000);
   };
-
-  if (isLoading) {
-    return (
-        <div className="flex items-center dark:bg-gray-800 justify-center h-screen">
-            Loading...
-            </div>
-    )
-  }
 
   const licenseTypes = [
     { value: "", label: "Select License Type" },
@@ -76,6 +70,10 @@ function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
+            <div>
+            <div>
+              <img src="" alt="" />
+            </div>
             {isSubmitted ? (
               <div className="p-8 text-center">
                 <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 dark:bg-green-900">
@@ -244,17 +242,32 @@ function ContactForm() {
                   </div>
 
                   <div>
-                    <button
-                      type="submit"
-                      className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
-                    >
-                      <FiSend className="mr-2" />
-                      Get a Valuation
-                    </button>
+                    {isLoading ? (
+                      <button
+                        type="submit"
+                        className="w-full flex justify-center items-center py-3 px-4 border border-transparent cursor-not-allowed rounded-md shadow-sm text-white bg-blue-800"
+                      >
+                        <FiSend className="mr-2" />
+                        Get a Valuation{" "}
+                        <div
+                          className="loader border-t-2 ml-3 rounded-full border-blue-500  animate-spin
+aspect-square w-8 flex justify-center items-center text-yellow-700"
+                        ></div>
+                      </button>
+                    ) : (
+                      <button
+                        type="submit"
+                        className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md cursor-pointer shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                      >
+                        <FiSend className="mr-2" />
+                        Get a Valuation
+                      </button>
+                    )}
                   </div>
                 </form>
               </div>
             )}
+            </div>
           </motion.div>
         </div>
       </div>
