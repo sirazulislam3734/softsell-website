@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from 'framer-motion';
+import BannerImg from '../assets/image.jpg';
 
 function HeroSection() {
   return (
@@ -47,8 +48,8 @@ function HeroSection() {
               <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 dark:bg-purple-700 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
               <div className="relative">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 relative">
-                  <div className="flex items-center justify-center h-48 mb-4">
-                    <img src="https://placehold.co/600x400?text=SoftSell" alt="SoftSell Hero" className="rounded-lg max-h-full" />
+                  <div className="flex items-center justify-center h-50 mb-4">
+                    <img src={BannerImg} alt="SoftSell Hero" className="rounded-lg max-h-full w-full" />
                   </div>
                   <div className="text-center">
                     <div className="text-sm font-semibold text-gray-500 dark:text-gray-400">TRUSTED BY INDUSTRY LEADERS</div>

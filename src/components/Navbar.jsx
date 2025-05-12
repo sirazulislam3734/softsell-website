@@ -12,7 +12,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
             <div className="flex-shrink-0 flex items-center">
               <a
                 href="#home"
-                className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors duration-300"
+                className="text-3xl font-bold text-blue-600 dark:text-blue-400 transition-colors duration-300"
               >
                 Soft<span className="text-gray-800 dark:text-white transition-colors duration-300">Sell</span>
               </a>

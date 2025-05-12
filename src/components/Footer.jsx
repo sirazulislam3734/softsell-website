@@ -7,7 +7,11 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <span className="text-blue-400 font-bold text-2xl">Soft<span className="text-white">Sell</span></span>
+            <a
+                className="text-3xl font-bold text-blue-600 dark:text-blue-400 transition-colors duration-300"
+              >
+                Soft<span className="text-gray-800 dark:text-white transition-colors duration-300">Sell</span>
+              </a>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               SoftSell helps businesses recover value from idle software assets. Get instant valuations and sell licenses in days, not months.
