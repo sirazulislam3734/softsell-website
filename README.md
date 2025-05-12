@@ -2,6 +2,11 @@
 
 A responsive, single-page marketing website for a fictional software license resale startup.
 
+<div className="flex gap-5 justify-center">
+<img src="/src/assets/fullImage1.png" alt="SoftSell Website" width="800" />
+<img src="/src/assets/fullImage2.png" alt="SoftSell Website" width="800" />
+</div>
+
 ## Features Implemented
 
 - Responsive design that works on mobile, tablet, and desktop
@@ -54,4 +59,4 @@ npm run build
 
 ## Deployment
 
-The site is deployed on Vercel at: [softsell-demo.vercel.app](https://softsell-demo.vercel.app)
+The site is deployed on Vercel at: ([https://softsell-website-ochre.vercel.app])
