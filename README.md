@@ -56,4 +56,4 @@ npm run build
 
 The site is deployed on Vercel at: ([https://softsell-website-ochre.vercel.app])
 
-<img src="/src/assets/fullImage1.png" alt="SoftSell Website" width="800" />
+<img src="/src/assets/image.png" alt="SoftSell Website" width="800" />
