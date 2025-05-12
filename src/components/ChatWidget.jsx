@@ -140,7 +140,7 @@ function ChatWidget({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }) {
               {messages.map((message) => (
                 <div key={message.id} className={`mb-3 ${message.sender === "user" ? "text-right" : ""}`}>
                   <div
-                    className={`inline-block p-3 rounded-lg max-w-[85%] ${
+                    className={`inline-block p-3 rounded-lg max-w-[80%] ${
                       message.sender === "user"
                         ? "bg-blue-600 text-white rounded-br-none"
                         : "bg-white dark:bg-gray-700 text-gray-800 dark:text-white shadow-sm rounded-bl-none"

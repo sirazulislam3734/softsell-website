@@ -65,7 +65,7 @@ const Testimonials = () => {
     
       return (
         <motion.div
-          className="flex flex-col md:flex-row gap-6 p-5 lg:p-24 bg-blue-50 dark:bg-gray-900 rounded-xl"
+          className="flex flex-col md:flex-row gap-5 max-w-7xl p-5 my-10 mx-auto bg-blue-50 dark:bg-gray-900 rounded-xl"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
