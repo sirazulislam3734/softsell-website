@@ -12,7 +12,7 @@ const Testimonials = () => {
           image: "https://i.ibb.co.com/nqwZVy7B/araf.jpg",
           rating: 4.5,
           companyDescription:
-            "Lorem Ipsum is simly dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since including versions of Lorem Ipsum....",
+            "TechVision Inc. is a forward-thinking technology firm that specializes in enterprise AI solutions and digital transformation strategies. With a focus on innovation, scalability, and client-centric design.",
         },
         {
           id: 2,
@@ -22,7 +22,7 @@ const Testimonials = () => {
           image: "https://i.ibb.co.com/HLMX6LRQ/photo.jpg",
           rating: 4.5,
           companyDescription:
-            "Lorem Ipsum is simly dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since including versions of Lorem Ipsum....",
+            "InnovateLabs is a cutting-edge research and development company committed to creating next-generation software products. Known for its agile development approach and passion for solving real-world problems.",
         },
       ]
     
